@@ -59,8 +59,6 @@ main {
 
 .hero-image {
     width: 50%;
-    /* height: 100%; */
-    /* margin-right: -150px; */
     border-radius: 50%;
     overflow: hidden;
     display: flex;
@@ -105,35 +103,123 @@ main {
     transition: .3s ease-in-out;
 }
 
-.arrow {
-    display: inline-block;
-    position: absolute;
-    /* top: 50%; */
-    transform: translateY(-50%);
-    margin-left: 5px;
-    /* transition: 10s eas; */
-}
-
-.arrow img {
-    height: 30px;
-    /* filter: brightness(0)saturate(100%)invert(100%); */
-}
-
-
 .about-me-btn:hover {
     transform: scale(0.9);
 }
 
-
-/* .about-me-btn:hover .arrow img {
-    margin-left: 10px;
-} */
-
-
 .btn-section-2 {
     position: absolute;
     margin-top: -150px;
-    left:50%;
-    transform:translate(-50%);
+    left: 50%;
+    transform: translate(-50%);
 
 }
+
+
+/* this is my popup card */
+
+.popup-card {
+    visibility:hidden;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    height: 700px;
+    /* border: 1px solid white; */
+    background-color:#1a1a1a;
+    z-index: 1;
+    display: flex;
+    color: white;
+    padding:60px 0  60px;
+    border-radius: 5px;
+    /* transition: 1s ease-in-out; */
+    /* transform: scale(0); */
+}
+
+.popup-card-show{
+    visibility:visible;
+    opacity: 1;
+    /* transform: scale(1); */
+}
+.sub-hero-text {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.sub-hero-image {
+    width: 50%;
+    display: flex;
+}
+
+.popup-card h4 {
+    font-size: 28px;
+    font-weight: 500;
+    text-align: start;
+    color: #1788ad
+}
+
+.popup-card .about-me{
+    margin: 20px 0 ;
+}
+
+.popup-card p {
+    font-size: 20px;
+    text-align: start;
+    line-height: 30px;
+}
+
+.sub-hero-image img {
+    width: 100%;
+    margin: auto;
+}
+
+
+/* tags */
+.tags{
+    margin-top: 20px;
+}
+.tag{
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 20px;
+}
+
+.mern-stack{
+    margin: 50px 0 ;
+}
+
+
+/* this is close btn */
+
+.close-btn{
+    position: absolute;
+    top: 2%;
+    left: 95%;
+    margin: 0;  
+    padding: 0;
+    color: rgb(184, 184, 184);
+}
+
+.close-btn .close{
+    font-size: 16px; 
+    margin: 0;  
+    padding: 0;
+    cursor: pointer;
+}
+
+.close-btn .close:hover{
+    color: rgb(255, 255, 255);
+    text-shadow:0px 0px 1px rgb(255, 255, 255);
+}
+
+
+
+
+
+/* media query */
+
+/* @media () */
